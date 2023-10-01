@@ -42,3 +42,7 @@ section{
     border-radius: 100%;
     font-size: 25px;
 }
+
+#scoreLine{
+    display: inline-flex;
+}
