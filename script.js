@@ -1,5 +1,10 @@
-const newVal =5
+
+
+$('.digitSelect').click(function (){
+    newVal =this.innerText;
+})
+
 
 $('button').click(function () {
     this.innerText=newVal;
-})
+});

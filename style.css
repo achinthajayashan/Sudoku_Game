@@ -2,6 +2,7 @@ section{
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -17,8 +18,27 @@ section{
     gap: 10px;
 }
 
-button{
+.digit{
     height: 100px;
     width: 100px;
     font-size: 35px;
+}
+
+.submitBtn{
+    width: 300px;
+    height: 60px;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.selectionPane{
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.digitSelect{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    font-size: 25px;
 }
