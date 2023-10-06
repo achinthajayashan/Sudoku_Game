@@ -1,3 +1,5 @@
+
+
 clickVal=0
 maxClicks=15
 
@@ -19,7 +21,7 @@ $('.digit').click(function () {
 
 function checkClicks() {
     if (clickVal==maxClicks){
-        alert("Game Over");
+        alert("Game Over... Out Of Clicks...");
     }
 }
 
@@ -29,7 +31,7 @@ function getValues() {
      r1c3=$('#r1c3').text();
      r1c4=$('#r1c4').text();
      r2c1=$('#r2c1').text();
-   r2c2=$('#r2c2').text();
+     r2c2=$('#r2c2').text();
      r2c3=$('#r2c3').text();
      r2c4=$('#r2c4').text();
      r3c1=$('#r3c1').text();
@@ -40,19 +42,33 @@ function getValues() {
      r4c2=$('#r4c2').text();
      r4c3=$('#r4c3').text();
      r4c4=$('#r4c4').text();
+
+
+
 }
 
 
 $('.submitBtn').click(function () {
+
     checkStatus();
 
     const realTotal=10;
 
     if ((r1==realTotal)&&(r2==realTotal)&&(r3==realTotal)&&(r4==realTotal)&&(c1==realTotal)&&(c2==realTotal)&&(c3==realTotal)&&(c4==realTotal)){
-        alert("Congratulations !.... Level 01 Completed !")
+        // alert("Congratulations !.... Level 01 Completed !")
+        Swal.fire({
+            icon: 'success',
+            title: 'Level Completed',
+            text: 'Go To Next Level',
+            // footer: '<a href="">Why do I have this issue?</a>'
+        })
     }else {
-        alert("Sorry.... Try Again ....")
+        // alert("Sorry.... Try Again ....")
+
     }
+
+
+
 
 })
 
@@ -66,5 +82,13 @@ function checkStatus(){
       c3= Number(r1c3)+Number(r2c3)+Number(r3c3)+Number(r4c3);
       c4= Number(r1c4)+Number(r2c4)+Number(r3c4)+Number(r4c4);
 }
+
+
+
+
+
+
+
+
 
 
