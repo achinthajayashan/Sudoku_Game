@@ -62,9 +62,15 @@ $('.submitBtn').click(function () {
             text: 'Go To Next Level',
             // footer: '<a href="">Why do I have this issue?</a>'
         })
+
     }else {
         // alert("Sorry.... Try Again ....")
-
+        Swal.fire({
+            icon: 'error',
+            title: 'Game Over',
+            text: 'Try Again...',
+            // footer: '<a href="">Why do I have this issue?</a>'
+        })
     }
 
 
